@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Kunst Galerie</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #333;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        #imageContainer {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="imageContainer">
+        <img id="currentImage" src="https://babybounce500.github.io/LORETO/1.jpg" alt="AI Kunstwerk">
+    </div>
+    <script>
+        
+const images = [
+    "https://babybounce500.github.io/LORETO/1.jpg",
+    "https://babybounce500.github.io/LORETO/2.jpg",
+    "https://babybounce500.github.io/LORETO/3.jpg",
+    "https://babybounce500.github.io/LORETO/3a.jpg",
+            "https://babybounce500.github.io/LORETO/4.jpg",
+            "https://babybounce500.github.io/LORETO/5.jpg",
+            "https://babybounce500.github.io/LORETO/6.jpg",
+            "https://babybounce500.github.io/LORETO/7.jpg",
+            "https://babybounce500.github.io/LORETO/8.jpg",
+            "https://babybounce500.github.io/LORETO/9.jpg",
+            "https://babybounce500.github.io/LORETO/10.jpg",
+            "https://babybounce500.github.io/LORETO/11.jpg",
+            "https://babybounce500.github.io/LORETO/12.jpg",
+            "https://babybounce500.github.io/LORETO/13.jpg",
+            "https://babybounce500.github.io/LORETO/14.jpg",
+            "https://babybounce500.github.io/LORETO/15.jpg",
+            "https://babybounce500.github.io/LORETO/16.jpg",
+            "https://babybounce500.github.io/LORETO/17.jpg",
+            "https://babybounce500.github.io/LORETO/18.jpg",
+            "https://babybounce500.github.io/LORETO/19.jpg",
+            "https://babybounce500.github.io/LORETO/20.jpg",
+            "https://babybounce500.github.io/LORETO/21.jpg",
+            "https://babybounce500.github.io/LORETO/22.jpg",
+            "https://babybounce500.github.io/LORETO/23.jpg",
+            "https://babybounce500.github.io/LORETO/24.jpg",
+            "https://babybounce500.github.io/LORETO/25.jpg",
+            "https://babybounce500.github.io/LORETO/26.jpg",
+            "https://babybounce500.github.io/LORETO/27.jpg",
+            "https://babybounce500.github.io/LORETO/28.jpg",
+            "https://babybounce500.github.io/LORETO/29.jpg",
+            "https://babybounce500.github.io/LORETO/30.jpg",
+            "https://babybounce500.github.io/LORETO/31.jpg",
+            "https://babybounce500.github.io/LORETO/32.jpg",
+            "https://babybounce500.github.io/LORETO/33.jpg",
+            "https://babybounce500.github.io/LORETO/34.jpg",
+            "https://babybounce500.github.io/LORETO/35.jpg",
+            "https://babybounce500.github.io/LORETO/36.jpg",
+            "https://babybounce500.github.io/LORETO/37.jpg",
+            "https://babybounce500.github.io/LORETO/38.jpg",
+            "https://babybounce500.github.io/LORETO/39.jpg",
+            "https://babybounce500.github.io/LORETO/40.jpg",
+            "https://babybounce500.github.io/LORETO/40.jpg",
+            "https://babybounce500.github.io/LORETO/40.jpg",
+            "https://babybounce500.github.io/LORETO/41.jpg",
+            "https://babybounce500.github.io/LORETO/42.jpg",
+            "https://babybounce500.github.io/LORETO/43.jpg",
+            "https://babybounce500.github.io/LORETO/44.jpg",
+            "https://babybounce500.github.io/LORETO/45.jpg",
+            "https://babybounce500.github.io/LORETO/46.jpg",
+            "https://babybounce500.github.io/LORETO/47.jpg",
+            "https://babybounce500.github.io/LORETO/48.jpg",
+            "https://babybounce500.github.io/LORETO/49.jpg",
+            "https://babybounce500.github.io/LORETO/50.jpg",
+    // ... (rest of the image URLs will remain as they are)
+];
+
+let currentIndex = 0;
+const imageElement = document.getElementById("currentImage");
+
+function changeImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    imageElement.src = images[currentIndex];
+}
+
+setInterval(changeImage, 3000);  // Change the image every 3 seconds
+
+    </script>
+</body>
+</html>
